@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puppy Store</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/build/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="PuppyStore">
+
+    <ul>
+        <li ui-sref="home">Home</li>
+        <li ui-sref="about">About</li>
+        <li ui-sref="puppy.gallery({ breed: 'golden' })">Golden Retriever</li>
+        <li ui-sref="puppy.gallery({ breed: 'pug' })">Pug</li>
+        <li ui-sref="puppy.gallery({ breed: 'doodle' })">Golden Doodle</li>
+        <li ui-sref="puppy.gallery({ breed: 'corgi' })">Corgi</li>
+    </ul>
+
+    <ui-view></ui-view>
+
+</body>
+</html>
